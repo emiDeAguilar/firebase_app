@@ -1,34 +1,53 @@
 # firebase_app
 
+## Descripcion:  
+Aplicación con Firebase y Flutter para dar seguimiento y control de rutinas de gimnasio, permite registar progreso diario y marcar repeticiones de series.
+
+
 **Requisitios:**
 
 * Conectarse correctamente a una instancia de Firebase, investigando y configurando los servicios necesarios (como autenticación, almacenamiento o base de datos, según corresponda).
 
-* Almacenar imágenes en Firebase, haciendo uso de las librerías adecuadas y siguiendo buenas prácticas de manejo de archivos y seguridad.
 
-* Recuperar múltiples imágenes desde Firebase y mostrarlas en un carrusel interactivo, utilizando paquetes de Flutter disponibles en pub.dev para la visualización y navegación de imágenes.
+* Recuperar rutinas y progreso desde Firebase y mostrarlas en listas o similares.
 
 ***
 
-Durante el desarrollo se deberá investigar brevemente qué librerías y tecnologías se pueden utilizar para resolver la necesidad, así como el motivo de su elección.
-
 Módulos:
 * Autenticación
-* Almacenamiento
+* Almacenamiento (firestone)
 
 Investigación:
 * Conexión exitosa a Firebase
-* Seguridad en almacenamiento de imagenes
-* Almacenar imágenes en firebase
+* Seguridad en almacenamiento de noSQL
 
 Acciones:
-* Recuperar imagenes desde firebase
+* Crear y recuperar rutinas desde firebase
 
 Screens:   
-* Carrusel interactivo
+* Login   
+  * Home (mostrar rutina de hoy)  
+    * Notas de entrenamiento por rutina (submenu)  
+  * Mis rutinas
+  * Profile
+  * Analytics (Premium feature)
 
-Steps: 
-Librerias pub.dev{Carousel, firebase}
-methods fetch images.
-Cuenta de firebase
+#
 
+###  Home - Widgets
+* todays date 
+* Start button big.   
+* Edit routine button small in right  
+* to do list style todays routine.
+    * for each element. from left to right:  
+            * Checkbox toggle  
+            * Exercise name  
+            * Exercise repetitions
+            * 
+* Navbar(Home, routines, profile)  
+* navbar [Profile]  
+#### Start button on action.
+
+
+### Profile
+[profile, prof name, prof info (mock: premium or freemium account), logout]
